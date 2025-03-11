@@ -1,0 +1,336 @@
+
+body{
+  margin: 0;
+  width: 100%;
+}
+.signup-container {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+.signup-form {
+  width: 400px;
+  height: 970px;
+  padding: 30px 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.signup-form p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  margin-top: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+
+.signup-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0;
+  margin-top: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+}
+
+
+.firstname-text, 
+.lastname-text {
+  width: 80px;
+}
+
+.email-text {
+  width: 105px;
+
+}
+
+.password-text{
+  width: 75px;
+
+}
+
+.institution-text {
+  width: 120px;
+
+}
+
+.institution-text + select option:first-child {
+  display: none;  
+   
+}
+
+.level-text {
+  width: 80px;
+  
+}
+
+.level-text + select option:first-child {
+  display: none;
+}
+
+.programme-text {
+  width: 80px;
+}
+
+.programme-text + select option:first-child {
+  display: none;
+}
+
+
+.confirm-password-text {
+  width: 133px;
+}
+
+
+.name-fields {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.name-fields input {
+  width: 195px;
+  height: 42px;
+  
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.terms input {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px; 
+}
+
+.check-box {
+  margin-right: 5px;
+  position: absolute;
+
+}
+
+.link {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+
+
+.checkbox-text {
+  width: 380px;
+}
+
+
+
+
+
+.create-account {
+  width: 100%;
+  padding: 10px;
+  background-color: #2563EB;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 38px;
+  transition: background-color 0.3s ease;
+}
+
+.create-account:hover {
+  background-color: #1d4ed8;
+}
+
+.create-account:active {
+  background-color: #1642ba; /* Darker blue on click */
+  transform: translateY(1px); /* Slight downward shift */
+}
+
+.or-signup {
+  text-align: center;
+  margin-top: 15px;
+  
+}
+
+
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.social-buttons button {
+  padding: 8px 15px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.google {
+  background-color: #fff;
+  width: 100%;
+  height: 38px;
+  color: #000;
+}
+
+.github {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  height: 38px;
+}
+
+.github:hover {
+  opacity: 0.8;
+}
+
+.github {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.signin-text {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.signin-link {
+  color: #007bff;
+  
+  
+}
+
+
+
+.footer {
+  width: 100%;
+  height: min-content;
+  background-color: #111827;
+  color: white;
+  padding: 20px 0;
+  margin-top: 50px;
+
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 5px;
+  color: #999;
+}
+
+.social-icons {
+  
+}
+
+.line{
+  margin-top: 10px;
+  width: 90%;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .signup-form {
+    width: 90%; 
+    height: auto; 
+  }
+
+  .name-fields {
+    flex-direction: column; 
+  }
+
+  .name-fields input {
+    width: 100%; 
+  }
+
+  .footer-content {
+    flex-direction: column; 
+    align-items: center;
+    
+  
+  }
+
+  .footer-section {
+    margin-bottom: 20px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .social-buttons {
+    flex-direction: column; 
+  }
+
+  .social-buttons button {
+    margin-bottom: 10px; 
+  }
+
+  .checkbox-text {
+    width: 90%; 
+  }
+  .signup-container{
+    width: 100%;
+    margin-right: 0;
+    
+    min-height: 100vh;
+  }
+  .checkbox-text{
+    font-size: 0.8rem;
+  }
+  
+  
+  
+}
