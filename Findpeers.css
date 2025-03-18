@@ -1,0 +1,218 @@
+.find-peers-container {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9; 
+  }
+  
+  .find-peers-container h1 { 
+    text-align: center;
+  }
+
+  
+  .connect-text{
+    margin-bottom: 40px;
+    text-align: center; 
+    margin-right: 50px;
+  }
+
+  .details-container {
+    margin-bottom: 20px;
+    background-color: white; 
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .search-input {
+    padding: 12px;
+    width: 100%;
+    max-width: 255px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  
+  }
+
+  .filter-row {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    
+    width: 100%;
+  }
+  
+  .university-select,
+  .courses-select,
+  .filter-box {
+    flex: 1 1 auto;
+    min-width: 150px;
+    margin-bottom: 5px;
+    
+  }
+  
+  .university-select p,
+  .courses-select p,
+  .filter-box p {
+    margin-bottom: 5px; 
+  }
+  
+  .filter-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .advanced-filters-button {
+    padding: 10px;
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    text-align: left; 
+  }
+  
+  .peers-found-sort-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .sort-select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .peers-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .peer-card {
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white; 
+  }
+  
+  .peer-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .peer-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .interests-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .interest-tag {
+    background-color: #DBEAFE;
+    color: #1E40AF;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .peer-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .connect-button,
+  .message-button {
+    padding: 8px 15px;
+    border-radius: 4px;
+  }
+  
+  .connect-button {
+    background-color: #2563EB; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    transition: background-color 0.3s ease
+  }
+
+  .connect-button:hover {
+    background-color: #1d4ed8;
+  }
+
+  .connect-button:active {
+    background-color: #1642ba;
+    transform: translateY(1px);
+
+  }
+
+  
+  
+  .message-button {
+    background-color: #D1D5DB;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 100px;
+  }
+
+  
+  
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-button {
+    padding: 8px 15px;
+    margin: 0 5px; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  
+  .pagination-button.active {
+    background-color: #2563EB; 
+    color: white;
+    border: none;
+  }
+  
+
+
+  @media (min-width: 768px) {
+    .details-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      height: 100%;
+    }
+  
+    .search-input {
+      flex: 1 1 auto; 
+      margin-bottom: 20px; 
+    }
+  
+    .university-select,
+    .courses-select,
+    .filter-box {
+      flex: 1 1 auto; 
+      margin-right: 10px;
+    }
+  
+    .peers-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
